@@ -41,9 +41,11 @@ body {
   background-color: #970138;
 }
 
-.header {
+.header,
+.marketplace-section {
   padding: 20px;
 }
+
 /* navbar styles */
 .brand-name {
   font-size: 1.5rem;
@@ -88,9 +90,24 @@ body {
   background-position: center;
 }
 
+/* marketplace section */
+.marketplace {
+  border: 1px solid rgba(218, 225, 233, 0.7);
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
 
 
-/* Responsive styles */
+
+
+
+
+
+/* Responsive styles mobile devices */
 @media screen and (max-width: 576px) {
   .navbar,
   .nav-links {
@@ -122,6 +139,11 @@ body {
   .banner-image {
     max-width: 250px;
     background-size: cover;
+  }
+
+  /* marketplace */
+  .marketplace {
+    border: none;
   }
 }
 
@@ -155,10 +177,4 @@ body {
   }
 }
 
-.marketplace {
-  justify-content: space-around;
-  align-items: center;
-  border: 1px solid rgb(218, 225, 233);
-  padding-top: 38px;
-  padding-bottom: 30px;
-}
+
