@@ -30,6 +30,13 @@ body {
   align-items: center;
 }
 
+.banner-description,
+.feature-description {
+  max-width: 510px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
 .btn-primary {
   background-color: #E02C6D;
   color: #FFFFFF;
@@ -47,14 +54,12 @@ body {
 
 section {
   margin-top: 80px;
-}
-
-.header,
-.marketplace-section,
-.collections {
   padding: 20px;
 }
 
+.header {
+  padding: 20px;
+}
 /* navbar styles */
 .brand-name {
   font-size: 1.5rem;
@@ -84,12 +89,6 @@ section {
   max-width: 580px;
   font-size: 3.25rem;
   font-weight: 700;
-}
-
-.banner-description {
-  max-width: 510px;
-  margin-top: 16px;
-  margin-bottom: 16px;
 }
 
 .banner-image {
@@ -195,6 +194,20 @@ section {
   color: rgba(224, 44, 110, 0.85);;
 }
 
+.feature {
+  align-items: center;
+  gap: 100px;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #0A0826;
+}
+
+.feature-btn {
+  border-radius: 0;
+}
 
 
 /* Responsive styles mobile devices */
@@ -235,6 +248,12 @@ section {
   .marketplace {
     border: none;
   }
+
+  .feature {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 30px;
+  }
 }
 
 /* medium devices */
@@ -264,6 +283,12 @@ section {
   .banner-content button {
     margin-top: 20px;
     padding: 15px 70px;
+  }
+
+  .feature {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 30px;
   }
 }
 
