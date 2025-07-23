@@ -12,7 +12,7 @@
 body {
   font-family: "Poppins", sans-serif;
   max-width: 1440px;
-  margin: 30px auto;
+  margin: 30px auto 0px;
 }
 
 /* shared style */
@@ -194,6 +194,11 @@ section {
   color: rgba(224, 44, 110, 0.85);;
 }
 
+/* feature section */
+.feature-section {
+  margin-bottom: 100px;
+}
+
 .feature {
   align-items: center;
   gap: 100px;
@@ -207,6 +212,38 @@ section {
 
 .feature-btn {
   border-radius: 0;
+}
+
+/* footer styles */
+.footer {
+  background-color: #0A0826;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.footer-description {
+  font-size: 0.85rem;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+
+.social-links img {
+  width: 18px;
+  height: 18px;
 }
 
 
